@@ -1,0 +1,7 @@
+flask
+mlxtend
+pandas
+numpy
+xlrd
+xhtml2pdf
+openpyxl

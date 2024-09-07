@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hasil Asosiai untuk Promosi paket Bundling</title>
+    <style>
+        th,
+        td {
+            padding: 10px 0 10px 0;
+        }
+
+        td {
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Total Jumlah Produk Terjual : {{terjual | safe }}</h2>
+        <h1>Total Jumlah Transaksi Penjualan : {{penjualan | safe }}</h2>
+
+            <h1>Hasil Aturan Asosiasi untuk Promosi paket Bundling</h1>
+            {{ table | safe }}
+            <h1>Tabel Hasil dengan penyaringan Lift > {{ lift | safe }}:</h1>
+            {{ liftFilter | safe }}
+
+            <h2>Keterangan : </h2>
+
+            <p>Hasil aturan asosiasi ini selain dapat langsung dijadikan paket bundling, aturan ini juga dapat
+                dikombinasikan dengan stok menumpuk sesuai kebutuhan perusahaan</p>
+            <p>Seperti contoh :
+            <p>
+
+            </p>1. Nux DM1X Drum Elektrik -> NUX M20 BANGKU DRUM, Jika membeli DM1X drum elektrik maka memungkinkan
+            membeli NUX M20 BANGKU DRUM.
+            Bangku drum dapat diganti dengan jenis bangku drum yang menumpuk dengan penawaran special</p>
+            <p> 2. CORT CM15R, Nux MG300 -> PAC112J. lalu stok yang menumpuk merupakan efek gitar, maka Jika Membeli
+                CORT CM15R dan
+                Nux MG300 memungkinkan membeli PAC112J.
+                dapat dilakukan promosi "beli 3 produk tersebut dapatkan harga spesial efek gitar yang menumpuk" </p>
+            <p> Ataupun perusahaan bisa mengombinasikan stok produk apapun yang relevan pada pola pembelian konsumen ini
+                dengan strategi yang dapat menarik perhatian konsumen</p>
+</body>
+
+</html>
